@@ -8,12 +8,15 @@ def animals
 	animal2 = Dog.new("Doggy", "woof", "lab")
 	animal3 = Fox.new("Fluffy", "bark", "redtail")
 
-	new_array = []
+	name_sound_array = []
+	name_breed_array = []
 	array = [animal1, animal2, animal3]
 		array.each do |animal|
-			new_array << animal.name_sound
+			name_sound_array << animal.name_sound
+			name_breed_array << animal.breed_name
 		end 
 
-	puts new_array 
+	puts name_sound_array 
+	puts name_breed_array
 end
 animals

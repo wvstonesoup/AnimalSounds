@@ -4,7 +4,7 @@ require_relative "dog.rb"
 require_relative "fox.rb"
 require_relative "animal_array.rb"
 
-class TestAnimalSounds < Minitest::Test
+class TestAnimalSounds <Minitest::Test
 
 	def test_cat_name
 		animal = Cat.new("Kitty", "meow", "siamese")
